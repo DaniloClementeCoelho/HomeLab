@@ -11,12 +11,23 @@
 - Sistema operacional atual: Ubuntu Server 26.04 LTS
 - Função: servidor principal de IA e containers
 
+### Rede
+
+- Hostname: `homelab01`
+- IP estático: `192.168.15.10/24`
+- Gateway: `192.168.15.1`
+- DNS: `8.8.8.8` e `1.1.1.1`
+- Interface Ethernet principal: `enx00e04c882bfb`
+- Interface Wi-Fi: `wlo1` — não utilizada
+- Gerenciamento de rede: NetworkManager (`nmcli`)
+
 ### Observações
 
 - A GPU NVIDIA está operacional no host e em containers Docker.
 - Driver adotado: `nvidia-driver-595-open`.
 - NVIDIA Container Toolkit instalado e validado.
 - O hardware permite executar modelos grandes com offload parcial para GPU, mas a maior parte do processamento de modelos de 30B permanece na CPU.
+- O endereço IPv4 estático evita mudanças de IP após reinicializações e mantém estáveis o acesso SSH e os serviços do HomeLab.
 
 ## homelab-srv01
 
