@@ -14,7 +14,7 @@
 ### Rede
 
 - Hostname: `homelab01`
-- IP estático: `192.168.15.10/24`
+- IP estático: `192.168.15.9/24`
 - Gateway: `192.168.15.1`
 - DNS: `8.8.8.8` e `1.1.1.1`
 - Interface Ethernet principal: `enx00e04c882bfb`
