@@ -27,12 +27,15 @@
 ### Rede
 
 - Configurado IPv4 estático no servidor principal.
-- Endereço definido como `192.168.15.10/24`.
+- Endereço inicialmente definido como `192.168.15.10/24`.
+- Detectado conflito de rede no endereço `192.168.15.10`.
+- Endereço definitivo alterado para `192.168.15.9/24`.
 - Gateway definido como `192.168.15.1`.
 - DNS configurado como `8.8.8.8` e `1.1.1.1`.
 - Interface Ethernet registrada como `enx00e04c882bfb`.
 - Configuração realizada via NetworkManager (`nmcli`).
 - Topologia Vivo, HomeLab e Eero documentada.
+- Acesso SSH validado em `192.168.15.9`.
 
 ### Diagnóstico registrado
 
