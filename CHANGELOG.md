@@ -24,6 +24,16 @@
 - SearXNG com API JSON funcional.
 - Homepage integrado ao socket Docker.
 
+### Rede
+
+- Configurado IPv4 estático no servidor principal.
+- Endereço definido como `192.168.15.10/24`.
+- Gateway definido como `192.168.15.1`.
+- DNS configurado como `8.8.8.8` e `1.1.1.1`.
+- Interface Ethernet registrada como `enx00e04c882bfb`.
+- Configuração realizada via NetworkManager (`nmcli`).
+- Topologia Vivo, HomeLab e Eero documentada.
+
 ### Diagnóstico registrado
 
 - `qwen3-coder:30b` respondeu diretamente pelo Ollama em 42,126 segundos.
