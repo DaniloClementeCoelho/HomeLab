@@ -9,7 +9,7 @@ Roteador Vivo Askey RTF8225VW-SV
 LAN: 192.168.15.1/24
    |
    +-- homelab01
-   |     IP estático: 192.168.15.10
+   |     IP estático: 192.168.15.9
    |
    +-- Eero
          WAN: 192.168.15.5
@@ -32,7 +32,7 @@ LAN: 192.168.15.1/24
 | Hostname | `homelab01` |
 | Interface Ethernet | `enx00e04c882bfb` |
 | Endereço MAC | `00:e0:4c:88:2b:fb` |
-| IPv4 | `192.168.15.10/24` |
+| IPv4 | `192.168.15.9/24` |
 | Gateway | `192.168.15.1` |
 | DNS primário | `8.8.8.8` |
 | DNS secundário | `1.1.1.1` |
@@ -45,6 +45,8 @@ A interface Wi-Fi `wlo1` não é utilizada.
 
 O IPv4 estático foi configurado diretamente no NetworkManager. O arquivo Netplan existente gerencia apenas a interface Wi-Fi e não deve ser usado para alterar a Ethernet.
 
+O endereço `192.168.15.10` apresentou conflito na rede. O endereço definitivo do servidor foi alterado para `192.168.15.9`.
+
 Objetivos da configuração estática:
 
 - impedir mudanças de endereço após reinicializações;
@@ -54,5 +56,5 @@ Objetivos da configuração estática:
 ## Acesso SSH
 
 ```bash
-ssh danilocoelho@192.168.15.10
+ssh danilocoelho@192.168.15.9
 ```
