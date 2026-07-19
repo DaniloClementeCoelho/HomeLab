@@ -16,6 +16,7 @@
 - `03-SERVIDORES.md` atualizado com o estado operacional do `homelab-ai01`.
 - `04-CONTAINERS.md` atualizado com a configuração operacional do ComfyUI.
 - `05-AI.md` atualizado com ambiente, modelo e teste inicial do ComfyUI.
+- `05-AI.md` estruturado para inventariar custom nodes, checkpoints, LoRAs, VAEs, ControlNet, outros modelos e workflows do ComfyUI.
 
 ### Infraestrutura registrada
 
